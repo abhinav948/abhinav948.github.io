@@ -1,0 +1,50 @@
+.container {
+    display:flex;
+   
+    grid-template-columns: 1fr 1fr 1fr;
+    
+   }
+   
+   .pro {
+     height: 600px;
+     width: 700px;
+     padding-left: 60px;
+     padding-right: 0px;
+     
+   }
+   
+   .text {
+     font-size: 30px;
+     float: left;
+     padding-right:0px;
+     padding-left: 50px;
+   }
+.small h6{
+    font-size: 12px;
+    font-weight:normal;
+     float: left;
+     padding-right:0px;
+     padding-left: 50px;
+     position: relative;
+     top: 2px;
+     
+}
+   /* resposive changes */
+  @media (max-width:1000px) {
+    .container {
+        display: grid;
+       
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 80px;
+       }
+       
+       .pro {
+         height: 600px;
+         width: 590px;
+         float: right;
+       }
+       
+       .text {
+         font-size: 50px;
+       }
+}

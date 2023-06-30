@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visitor Count</title>
+  <script>
+    // Function to increment and display the visitor count
+    function incrementVisitorCount() {
+      if (typeof(Storage) !== "undefined") {
+        if (localStorage.visitorCount) {
+          localStorage.visitorCount = Number(localStorage.visitorCount) + 1;
+        } else {
+          localStorage.visitorCount = 1;
+        }
+        document.getElementById("count").textContent = localStorage.visitorCount;
+      } else {
+        console.log("Local storage is not supported in this browser.");
+      }
+    }
+  </script>
+</head>
+<body onload="incrementVisitorCount()">
+  
+  <p>Total Visitors: <span id="count"></span></p>
+</body>
+</html>

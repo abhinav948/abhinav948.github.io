@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+
+  /* nav bar */
+  .nav {
+    height: 72px;
+    width: 110%;
+    background-color: #F1F1F1;
+    position: relative;
+  }
+  
+  .nav  .nav-header {
+    display: inline;
+ 
+  }
+.footer{
+  position:relative;
+}
+  .servertime{
+    position:absolute;
+    right:100px;
+    bottom:10px;
+  }
+ .logo{
+    margin: 5px; 
+    height: 50px;
+    width: 385px;
+    padding-right: 185px;
+    padding-left: 10px;
+ }
+
+  
+  .nav  .nav-links {
+    display:inline-block;
+  
+    position:absolute;
+    font-size: 18px;
+
+  }
+  
+  .nav  .nav-links  a {
+    display: inline-block;
+    padding: 20px 10px 20px 10px;
+    text-decoration: none;
+    color: #767775;
+    
+    align-items: center;
+  }
+  
+  .nav  .nav-links  a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  hr{
+  background-color: #ff0000;
+  color: #F1F1F1;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 0px solid #eeeeee;
+  width: 90%;
+  }
+  
+/* navbar end */
+
+  /* resposive changes */
+  @media (max-width:700px) {
+    .logo{
+        height: 25px;
+        width: 115px;
+    }
+
+    .nav  .nav-links {
+        font-size: 18px;
+    }
+}
+  
+  @media (max-width:675px) {
+    .logo{
+        height: 25px;
+        width: 105px;
+    }
+
+    .nav  .nav-links {
+        font-size: 15px;
+    }
+   
+  }
+  @media (max-width:600px) {
+    .logo{
+        height: 25px;
+        width: 105px;
+    }
+
+    .nav  .nav-links {
+        font-size: 13px;
+    }
+   
+  }
+  @media (max-width:550px) {
+    .logo{
+        height: 25px;
+        width: 95px;
+    }
+
+    .nav  .nav-links {
+        font-size: 10px;
+    }
+   
+  }
+  @media (max-width:480px) {
+    .logo{
+        margin: 10px;
+        height: 15px;
+        width: 95px;
+    }
+}
